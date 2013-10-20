@@ -1,0 +1,64 @@
+As of October 20, 2013
+
+
+export PATH="/usr/local/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#Colors
+Black='\e[0;30m' 
+Red='\e[0;31m'   
+Yellow='\e[0;32m' 
+Yellow='\e[0;33m'
+Blue='\e[0;34m'  
+Purple='\e[0;35m'
+Cyan='\e[0;36m'  
+White='\e[0;37m' 
+
+
+
+export PS1='\[\033[0;33m\]Yaron \[\033[0;31m\]\W \[\033[0m\]$(git_prompt) \[\033[0m\]$ '
+
+git_prompt ()
+{
+  if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    return 0
+  fi
+  git_branch=$(Git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
+  if git diff --quiet 2>/dev/null >&2; then
+    git_color="${c_git_clean}"
+  else
+    git_color=${c_git_dirty}
+  fi
+  echo " ($git_color$git_branch${c_reset})"
+}
+
+##### ALIASES #######
+
+alias s='subl'
+alias dt='cd Desktop'
+alias sbash='s ~/.bash_profile'
+
+#Projects
+alias fr='cd ~/Desktop/fortune_rookie'
+alias oo='cd ~/Desktop/olive-owl'
+alias gp='cd ~/Desktop/get_paid'
+alias soc='cd Desktop/socrates'
+
+
+#GIT
+alias g='git'
+alias co='git checkout'
+alias add='git add'
+alias cmt='git commit -m'
+alias stat='git status'
+alias log='git log --pretty=oneline --graph'
+alias br='git branch'
+alias ft='git fetch'
+alias rb='git rebase'
+alias gpom='git pull origin master'
+alias ghom='git push origin master'
+
+
+#Rails
+alias prep='rake db:test:prepare'
+alias r='rspec --color'
