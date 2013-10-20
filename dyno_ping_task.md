@@ -19,3 +19,6 @@ $ heroku config:add PING_URL=http://my-app.herokuapp.com
 ```
 
 Add dyno_ping task to Heroku Scheduler
+
+From:
+https://coderwall.com/p/u0x3nw
