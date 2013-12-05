@@ -4,7 +4,7 @@ $ git remote -v
 # origin  https://github.com/user/repo.git (fetch)
 # origin  https://github.com/user/repo.git (push)
 
-$ git remote set-url origin https://github.com/user/repo12git
+$ git remote set-url origin https://github.com/user/repo2git
 # Change the 'origin' remote's URL
 
 $ git remote -v
