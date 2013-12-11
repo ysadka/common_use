@@ -1,3 +1,3 @@
 ```sh
-pbcopy < ~/.ssh/<file extension>.pub
+$ pbcopy < ~/.ssh/<file extension>.pub
 ```
