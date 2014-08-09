@@ -1,18 +1,23 @@
-As of October 20, 2013
-
+As of August 9, 2013
 
 export PATH="/usr/local/bin:$PATH"
+
+# Go
+export PATH="$HOME/go/bin:$PATH"
+export GOPATH="$HOME/go"
+
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #Colors
-Black='\e[0;30m' 
-Red='\e[0;31m'   
-Yellow='\e[0;32m' 
+Black='\e[0;30m'
+Red='\e[0;31m'
+Yellow='\e[0;32m'
 Yellow='\e[0;33m'
-Blue='\e[0;34m'  
+Blue='\e[0;34m'
 Purple='\e[0;35m'
-Cyan='\e[0;36m'  
-White='\e[0;37m' 
+Cyan='\e[0;36m'
+White='\e[0;37m'
 
 
 
@@ -34,31 +39,50 @@ git_prompt ()
 
 ##### ALIASES #######
 
+alias a='atom'
 alias s='subl'
-alias dt='cd Desktop'
-alias sbash='s ~/.bash_profile'
+alias dt='cd ~/Desktop'
+alias ob='a ~/.bash_profile'
+alias ngrok='~/Desktop/ngrok'
 
 #Projects
-alias fr='cd ~/Desktop/fortune_rookie'
-alias oo='cd ~/Desktop/olive-owl'
-alias gp='cd ~/Desktop/get_paid'
-alias soc='cd Desktop/socrates'
-
+alias iron='cd ~/Desktop/Iron.io'
+alias ws='cd ~/Desktop/winesimple_ecom'
 
 #GIT
 alias g='git'
-alias co='git checkout'
-alias add='git add'
-alias cmt='git commit -m'
-alias stat='git status'
-alias log='git log --pretty=oneline --graph'
-alias br='git branch'
-alias ft='git fetch'
-alias rb='git rebase'
-alias gpom='git pull origin master'
-alias ghom='git push origin master'
+alias b='g branch'
+alias f='g fetch'
+alias co='g checkout'
+alias rb='g rebase'
+alias add='g add'
+alias cmt='g commit -m'
+alias log='g log --pretty=oneline --graph'
+alias stat='g status'
+alias grom='g rebase origin/master'
+alias gpom='g pull origin master'
+alias ghom='g push origin master'
 
 
 #Rails
 alias prep='rake db:test:prepare'
 alias r='rspec --color'
+
+
+
+# single letter
+# b='g branch'
+# f='g fetch'
+# g='git'
+# r='rspec --color'
+# s='subl'
+
+# double letter
+# co='g checkout'
+# dt='cd ~/Desktop'
+# rb='g rebase'
+
+# triple letter
+# add='g add'
+# cmt='g commit -m'
+# log='g log --pretty=oneline --graph'
