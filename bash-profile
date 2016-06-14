@@ -1,4 +1,4 @@
-As of August 9, 2013
+As of June 2016
 
 export PATH="/usr/local/bin:$PATH"
 
@@ -39,15 +39,12 @@ git_prompt ()
 
 ##### ALIASES #######
 
-alias a='atom'
-alias s='subl'
+alias s='sublime'
 alias dt='cd ~/Desktop'
-alias ob='a ~/.bash_profile'
+alias ob='s ~/.bash_profile'
 alias ngrok='~/Desktop/ngrok'
 
 #Projects
-alias iron='cd ~/Desktop/Iron.io'
-alias ws='cd ~/Desktop/winesimple_ecom'
 
 #GIT
 alias g='git'
