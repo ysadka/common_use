@@ -43,6 +43,7 @@ alias s='sublime'
 alias dt='cd ~/Desktop'
 alias ob='s ~/.bash_profile'
 alias ngrok='~/Desktop/ngrok'
+alias pgdb='postgres -D /usr/local/var/postgres'
 
 #Projects
 
